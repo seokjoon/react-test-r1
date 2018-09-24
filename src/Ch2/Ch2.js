@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import './T1a.css';
+import './Ch2.css';
 
-class T1a extends Component {
+class Ch2 extends Component {
 	render() {
 		let msg = 'T1a';
 		const style = { border: "1px solid gray", };
@@ -18,4 +18,4 @@ class T1a extends Component {
 	}
 }
 
-export default T1a;
+export default Ch2;
