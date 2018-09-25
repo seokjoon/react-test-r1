@@ -7,9 +7,11 @@ import registerServiceWorker from './registerServiceWorker';
 //import Ch3 from './Ch3/Ch3';
 //import Ch4 from './Ch4/Ch4';
 //import Ch5 from './Ch5/Ch5';
-import Ch6 from "./Ch6/Ch6";
+//import Ch6 from "./Ch6/Ch6";
+import Ch9 from "./Ch9/Ch9";
 
-ReactDOM.render(<Ch6/>, document.getElementById('root'))
+ReactDOM.render(<Ch9/>, document.getElementById('root'));
+//ReactDOM.render(<Ch6/>, document.getElementById('root'))
 //ReactDOM.render(<Ch5/>, document.getElementById('root'));
 //ReactDOM.render(<Ch4/>, document.getElementById('root'));
 //ReactDOM.render(<Ch3 name="Ch3" age={20} />, document.getElementById('root1'));
