@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 //import styles from './Ch9.css';
 //import styles from './Ch9.scss';
 import Button from './Components/Button';
+import StyledButton from './Components/StyledButton';
 
 //const cx = classNames.bind(styles);
 
@@ -23,6 +24,7 @@ class Ch9 extends Component {
 			*/
 			<div>
 				<Button>button</Button>
+				<StyledButton big>button</StyledButton>
 			</div>
 		);
 
