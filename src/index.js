@@ -11,8 +11,12 @@ import registerServiceWorker from './registerServiceWorker';
 //import Ch9 from "./Ch9/Ch9";
 //import Ch10 from "./Ch10/Ch10";
 import Ch13 from "./Ch13/containers/Ch13";
+import { createStore } from "redux";
+import reducers from './Ch13/reducers';
+import { Provider } from 'react-redux';
+const store = createStore(reducers);
 
-ReactDOM.render(<Ch13/>, document.getElementById('root'));
+ReactDOM.render(<Provider store={store}><Ch13/></Provider>, document.getElementById('root'));
 //ReactDOM.render(<Ch10/>, document.getElementById('root'));
 //ReactDOM.render(<Ch9/>, document.getElementById('root'));
 //ReactDOM.render(<Ch6/>, document.getElementById('root'))
