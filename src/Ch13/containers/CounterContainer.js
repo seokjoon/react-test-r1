@@ -23,8 +23,8 @@ export function getRandomColor() {
 }
 
 const mapStateToProps = (state) => ({
-	color: state.color,
-	number: state.number,
+	color: state.colorData.color, //color: state.color,
+	number: state.numberData.number, //number: state.number,
 });
 
 const mapDispatchToProps = (dispatch) => ({
