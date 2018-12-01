@@ -7,8 +7,8 @@ class Ch13 extends Component {
 	render() {
 		return (
 			<div>
-				<Counter/>
 				<CounterContainer/>
+				<Counter/>
 			</div>
 		);
 	}
