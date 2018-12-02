@@ -14,6 +14,7 @@ import Ch13 from "./Ch13/containers/Ch13";
 import { createStore } from "redux";
 import reducers from './Ch13/reducers';
 import { Provider } from 'react-redux';
+//const store = createStore(reducers);
 const store = createStore(reducers, window.devToolsExtension && window.devToolsExtension());
 
 ReactDOM.render(<Provider store={store}><Ch13/></Provider>, document.getElementById('root'));
