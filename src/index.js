@@ -10,14 +10,18 @@ import registerServiceWorker from './registerServiceWorker';
 //import Ch6 from "./Ch6/Ch6";
 //import Ch9 from "./Ch9/Ch9";
 //import Ch10 from "./Ch10/Ch10";
-import Ch13 from "./Ch13/containers/Ch13";
+//import Ch13 from "./Ch13/containers/Ch13";
+//import reducers from './Ch13/reducers';
 import { createStore } from "redux";
-import reducers from './Ch13/reducers';
 import { Provider } from 'react-redux';
 //const store = createStore(reducers);
-const store = createStore(reducers, window.devToolsExtension && window.devToolsExtension());
+//const store = createStore(reducers, window.devToolsExtension && window.devToolsExtension());
+import Ch14 from './Ch14/Ch14';
+import modules from './Ch14/modules';
+const store = createStore(modules, window.devToolsExtension && window.devToolsExtension());
 
-ReactDOM.render(<Provider store={store}><Ch13/></Provider>, document.getElementById('root'));
+ReactDOM.render(<Provider store={store}><Ch14/></Provider>, document.getElementById('root'));
+//ReactDOM.render(<Provider store={store}><Ch13/></Provider>, document.getElementById('root'));
 //ReactDOM.render(<Ch10/>, document.getElementById('root'));
 //ReactDOM.render(<Ch9/>, document.getElementById('root'));
 //ReactDOM.render(<Ch6/>, document.getElementById('root'))
