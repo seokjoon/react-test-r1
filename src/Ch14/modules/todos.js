@@ -11,25 +11,21 @@ export const toggle = createAction(TOGGLE);
 
 const initialState = List([
 	Map({
-		done: true,
 		id: 0,
-		text: 'react learn',
+		text: 'learning react',
+		done: true,
 	}),
 	Map({
-		done: false,
 		id: 1,
 		text: 'component styling',
+		done: false,
 	}),
 ]);
 
 export default handleActions({
 	[INSERT]: (state, action) => {
-		const { done, id, text} = action.payload;
-		return state.push(Map({
-			done,
-			id,
-			text,
-		}));
+		const { id, text, done, } = action.payload;
+		return state.push(Map({ id, text, done, }));
 	},
 	[REMOVE]: (state, action) => {
 		const { payload: index } = action;

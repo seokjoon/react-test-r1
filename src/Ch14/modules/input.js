@@ -6,11 +6,11 @@ const SET_INPUT = 'input/SET_INPUT';
 export const setInput = createAction(SET_INPUT);
 
 const initialState = Map({
-	value: '',
+	value: ''
 });
 
 export default handleActions({
 	[SET_INPUT]: (state, action) => {
-		return state.set('value', action.payload);
+		return state.set('value', action.payload)
 	}
 }, initialState);

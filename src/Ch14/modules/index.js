@@ -1,6 +1,6 @@
-import input from './index';
+import input from './input';
 import todos from './todos';
-import { combineReducers } from 'redux';
+import { combineReducers } from "redux";
 
 export default combineReducers({
 	input,

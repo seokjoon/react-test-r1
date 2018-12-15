@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import TodoInput from '../components/TodoInput';
 
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import { bindActionCreators } from "redux";
 
 import * as inputActions from '../modules/input';
 import * as todosActions from '../modules/todos';
@@ -34,7 +34,11 @@ class TodoInputContainer extends Component {
 		const { value } = this.props;
 		const { handleChange, handleInsert } = this;
 		return (
-			<TodoInput onChange={handleChange} onInsert={handleInsert} value={value} />
+			<TodoInput
+				onChange={handleChange}
+				onInsert={handleInsert}
+				value={value}
+			/>
 		);
 	}
 }
@@ -47,4 +51,4 @@ export default connect(
 		InputActions: bindActionCreators(inputActions, dispatch),
 		TodosActions: bindActionCreators(todosActions, dispatch),
 	}),
-)(TodoInputContainer); //export default TodoInputContainer;
+)(TodoInputContainer);
